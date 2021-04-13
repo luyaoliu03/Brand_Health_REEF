@@ -1085,21 +1085,5 @@ LEFT JOIN roi_28 x ON dsp.order_date = x.order_date AND dsp.brand = x.brand
 
 ;
 
-
-
---select * from doris_temp where order_date = '2021-02-10' order by brand;
-
---Select count(*) from doris_temp where order_date = '2021-02-10'; --1221
---select count(distinct order_date + brand) from brand_optimisation.daily_storefront_performance where order_date = '2021-02-10';  --59
-
-/*
-select distinct brand_type from brand_optimisation.daily_storefront_performance;
-
-
-select brand, kitchen_code, min(order_date) from kitchen.order
-where lower(brand) like '%man%fries%'
-and kitchen_code = 'SEA14-1'
-GROUP BY 1,2
-;
-
-*/
+		
+		
